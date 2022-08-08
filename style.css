@@ -1,0 +1,313 @@
+body{
+    margin: 0%;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.banner{
+    margin: 4.5% 8%;
+    display: flex;
+    background-color:rgb(62, 59, 59);
+    color: white;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.banner > .description{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+.banner > .description h1{
+    font-size: 3.5rem;
+    margin: 0%;
+}
+.banner img{
+    width: 30vw;
+    height: 100%;
+}
+.banner > .description p{
+    font-size: 1.5rem;
+}
+.banner > .description a{
+    text-decoration: none;
+    padding: 2%;
+    background-color:royalblue;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 30%;
+    border-radius: 5px;
+    color: white;
+    transition: .6s;
+    
+}
+.banner > .description a:hover{
+    width: 35%;
+    padding: 3%;
+}
+
+.details{
+    display: flex;
+    margin: 7% 5%;
+    justify-content: space-between;
+}
+.details > .buttons{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    background-color: rgb(62, 59, 59);
+    padding: 1vw;
+    border-radius: 1vw;
+    max-height: 20vw;
+    justify-content: space-between;
+}
+.details > .buttons a{
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 1vw;
+    background-color: white;
+   margin: 1vw 0;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.details > .events{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 70%;
+    
+}
+.events > .card{
+    flex-basis: 30%;
+    margin-bottom: 3vw;
+    background-color: rgb(178, 174, 174);
+    border-radius: 1vw;
+}
+.events > .card img{
+    width: 100%;
+    border-radius: 1vw;
+    
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.events > .card a,h2,.time{
+   margin: 1vw;
+}
+.events > .card .transfer{
+    margin-top: 1vw;
+}
+.events > .card  a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: .5vw;
+    border-radius: 5px;
+    font-weight: thin;
+}
+.events > .card h2{
+    font-size: 1.3rem;
+}
+.events > .card .time{
+    display: flex;
+
+}
+.time > .icon1 {
+    display: flex;
+    justify-content: center;
+    color: royalblue;
+    padding: .5vw;
+    align-items: center;
+}
+.time > .icon2 {
+    display: flex;
+    justify-content: center;
+    color: royalblue;
+    padding: .5vw;
+    align-items: center;
+}
+
+.footerContainer{
+    background-color: rgb(62, 59, 59) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+    color: white;
+}
+.footerHead{
+ font-size: 2rem;
+}
+.footerBar{
+    width: 80%;
+}
+.footerContents{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   margin-bottom: 3vw;
+}
+.footerContents a{
+    text-decoration: none;
+    color: white;
+    padding: .5vw;
+    margin: 1.5vw;
+    
+   
+}
+.footerIcons{
+    display: flex;
+   align-items: center;
+}
+.footerIcons i{
+    font-size: 2.5vw;
+    margin: 0 3vw ;
+}
+
+
+/* adding media query */
+
+@media all and (max-width : 1137px) {
+    .banner > .description a{
+        width: 40%;
+        transition: .6s;
+    }
+    .banner > .description a:hover{
+        width: 45%;
+        
+    }
+    .details {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .details > .buttons{
+        flex-direction: row;
+        justify-content: space-evenly;
+       min-width: 70%;
+        margin-bottom: 4vw;
+    }
+    .details > .buttons a {
+        font-size: 2.5vw;
+    }
+    .events {
+        min-width: 80%;
+        justify-content: space-evenly;
+    }
+    .events > .card{
+        flex-basis: 40%;
+        min-width: 35vw;
+       
+    }
+    .events > .card a{
+        font-size: 2vw;
+    }
+    .events > .card h2{
+        font-size: 3vw;
+    }
+     .time >.icon1 span{
+        font-size: 2vw;
+    }
+    .time >.icon2 span{
+        font-size: 2vw;
+    }
+
+    .footerContents a{
+        font-size: 2vw;
+    }
+    .footerIcons i{
+        font-size: 3vw;
+    }
+}
+
+/*media in 797 width */
+@media all and (max-width: 797px){
+    .banner{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+  
+    .banner .bannerImage{
+        background-color: white;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 5vw;
+        
+    }
+}
+
+/*media at 655*/
+@media all and (max-width: 655px){
+    .banner > .description h1{
+        font-size: 7vw;
+    }
+    .banner > .description p{
+        font-size: 3vw;
+    }
+    .footerContents a{
+        font-size: 3.5vw;
+    }
+    
+}
+
+/*media at 447*/
+@media all and (max-width: 447px) {
+    .banner > .description h1{
+        font-size: 8vw;
+    }
+    .banner > .description p{
+        font-size: 4vw;
+    }
+    .banner > .description a{
+        font-size: 4.5vw;
+    }
+    .container > .details >.buttons{
+        flex-direction: column;
+        max-height: 15vh;
+        justify-content: flex-start;
+    }
+    .container > .details a{
+        font-size: 4vw;
+    }
+    .events {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .events > .card{
+        max-width: 60vw;
+    }
+    .events > .card h2{
+        font-size: 5vw;
+    }
+    .events > .card .icon1 span{
+        font-size: 5vw;
+    }
+    .events > .card .icon2 span{
+        font-size: 5vw;
+    }
+    .footerContents{
+        flex-direction: column;
+    }
+    .footerContents a{
+        font-size: 3.5vw;
+    }
+    .footerIcons i{
+        font-size: 5vw;
+        margin-bottom: 4vw;
+    }
+    
+}
+
+
+
+
