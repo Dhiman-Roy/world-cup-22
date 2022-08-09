@@ -284,7 +284,8 @@ body{
        
     }
     .events > .card{
-        max-width: 60vw;
+        max-width: 75vw;
+        margin-bottom: 7vw;
     }
     .events > .card h2{
         font-size: 5vw;
